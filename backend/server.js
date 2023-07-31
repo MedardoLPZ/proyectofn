@@ -9,13 +9,13 @@ app.use(express.json());
 
 const db = mysql.createConnection({
     host:"localhost",
-    user: "root",
+    user: "Root",
     password: "",
     database: "proyecto"
 })
 
 app.post('/proyecto',(req,res)=>{
-    const sql = "INSERT INTO USUARI('nombre','correo','contrseña') VALUES (?)"
+    const sql = "INSERT INTO ('nombre','correo','contrseña') VALUES (?)"
     const values =[
         req.body.name,
         req.body.email,
