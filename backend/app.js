@@ -8,9 +8,13 @@ import evaluaciondocRoutes from "./src/routes/evaluaciondoc.routes.js";
 import evaluaciongnRoutes from "./src/routes/evaluaciongn.routes.js";
 import rolesRoutes from "./src/routes/roles.routes.js";
 
+import cors from "cors"
+
 
 const app = express();
 app.use(express.json());
+
+app.use(cors({origin:'*'}))
 
 app.use("/v1", usersRoutes)
 app.use("/v1", administradorRoutes)
