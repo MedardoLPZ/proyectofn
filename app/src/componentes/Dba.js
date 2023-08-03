@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Dba() {
   return (
@@ -147,13 +148,12 @@ function Dba() {
     </div>
   </div>
   </div>
+
+  <Link to="/" ></Link>
     
 
 
 
-
-
-      
     </div>
   )
 }

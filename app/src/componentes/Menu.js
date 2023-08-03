@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Menu() {
   return (
@@ -10,10 +11,10 @@ function Menu() {
 <nav class="bg-blue-500 p-4">
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
-        <a class="text-white text-xl font-bold" href="#">USAP</a>
+        <a class="text-white text-xl font-bold" href="http://localhost:3000/">USAP</a>
         <div class="hidden md:flex space-x-4">
-          <a class="text-white" href="#">Inicio</a>
-          <a class="text-white" href="#">Acerca de</a>
+          <a class="text-white" href="http://localhost:3000/director">Inicio</a>
+          <a class="text-white" href="http://localhost:3000/nosotros">Acerca de</a>
         </div>
       </div>
     </div>
@@ -29,6 +30,8 @@ function Menu() {
     <p>Lo que nos queda es que aprendimos algo nuevo, y utilizar la metodologia XP aunque cansa se puede lograr lo propuesto.</p>
   
       </div>
+
+      <Link to="/" ></Link>
 
       
     </div>

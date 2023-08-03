@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Adminis() {
   return (
@@ -96,6 +97,7 @@ function Adminis() {
     </div>
   </div>
   </div>
+  <Link to="/" ></Link>
     
 
 

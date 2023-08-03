@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Director() {
   return (
@@ -157,22 +158,22 @@ function Director() {
 
       <div class="container mx-auto p-2">
   
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
-      type="button">
+    <Link to ="http://localhost:3000/menu"  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
+      >
       Inicio
-    </button>
+    </Link>
 
    
-    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
+    <Link class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
       type="button">
       Enviar
-    </button>
+    </Link>
 
   
-    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+    <Link to  ="http://localhost:3000" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
       type="button">
       Salir
-    </button>
+    </Link>
   </div>
 
 
@@ -181,6 +182,8 @@ function Director() {
     </div>
   </div>
   </div>
+
+  <Link to="/" ></Link>
     
     </div>
   )

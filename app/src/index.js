@@ -12,20 +12,55 @@ import {
   Link,
 } from "react-router-dom";
 import Login from './componentes/Login';
+import Menu from './componentes/Menu';
+import Dba from './componentes/Dba';
+import Director from './componentes/Director';
+import Nosotros from './componentes/Nosotros';
+import Nuevousuario from './componentes/Nuevousuario';
+import Adminis from './componentes/Adminis';
+import Oferta from './componentes/Oferta';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
+        <Link to="login"><Login/></Link>
       </div>
     ),
   },
   {
-    path: "login",
-    element: <Login/>,
+    path: "menu",
+    element: <Menu/>,
+  },
+  {
+    path: "dba",
+    element: <Dba/>,
+  },
+  {
+    path: "oferta",
+    element: <Oferta/>,
+  },
+  {
+    path: "adminis",
+    element: <Adminis/>,
+  },
+  {
+    path: "nosotros",
+    element: <Nosotros/>,
+  },
+  {
+    path: "nuevousuario",
+    element: <Nuevousuario/>,
+  },
+  {
+    path: "oferta",
+    element: <Oferta/>,
+  },
+  {
+    path: "director",
+    element: <Director/>,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Oferta() {
   return (
@@ -117,6 +118,7 @@ function Oferta() {
     </form>
   </div>
 </body>
+<Link to="/" ></Link>
 
     </div>
   )

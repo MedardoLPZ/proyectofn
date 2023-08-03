@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Nuevousuario() {
   return (
@@ -44,6 +45,7 @@ function Nuevousuario() {
 
 </body>
       
+<Link to="/" ></Link>
     </div>
   )
 }
